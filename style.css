@@ -1,24 +1,20 @@
 #pdf-container {
-    position: relative;
-    width: 100%;
-    /* Height can be set to auto to expand with content,
-    or you can set a specific height if you need scrolling */
-    height: auto;
-    overflow: auto;
-  }
-  
-  .highlight {
-    position: absolute;
-    background-color: yellow;
-    opacity: 0.5;
-    /* Set z-index to a high value to ensure highlights are above the canvases */
-    z-index: 1000;
-  }
-  
-  canvas {
-    display: block;
-    width: 100%; /* Fit to container width */
-    height: auto; /* Height should be auto to maintain aspect ratio */
-    margin-bottom: 10px; /* Space between pages */
-  }
-  
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: auto;
+}
+
+.highlight {
+  position: absolute;
+  background-color: yellow;
+  opacity: 0.5;
+  z-index: 1000;
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
