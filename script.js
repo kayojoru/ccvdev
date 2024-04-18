@@ -29,7 +29,7 @@ fetch('objects.json')
                 div.style.width = `${(highlight.coordinates.x1 - highlight.coordinates.x0) * scale}px`;
                 div.style.height = `${(highlight.coordinates.y1 - highlight.coordinates.y0) * scale}px`;
                 div.style.left = `${highlight.coordinates.x0 * scale}px`;
-                div.style.top = `${viewport.height - highlight.coordinates.y1 * scale}px`;
+                div.style.top = `${(viewport.height - highlight.coordinates.y1) * scale}px`;
                 container.appendChild(div);
               }
             });
